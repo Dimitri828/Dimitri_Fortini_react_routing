@@ -1,26 +1,37 @@
-body{
-  margin:0px
+body {
+  margin: 0px;
 }
-.navbar{
-height: 100px;
+.navbar {
+  height: 100px;
+
+  background-color: cornflowerblue;
+}
+.d-flex {
+  height: 100%;
+  width: 100%;
   display: flex;
-justify-content: center;
-align-items: center;
-gap: 30px;
-background-color: cornflowerblue;
+  justify-content: center;
+  align-items: center;
 }
-.navbar > .nav-link{
+
+.ul {
+  gap: 30px;
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+.navbar .nav-link {
   text-decoration: none;
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
   font-size: 30px;
 }
 
-.form{
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.form > input{
+.form > input {
   margin-bottom: 20px;
 }
