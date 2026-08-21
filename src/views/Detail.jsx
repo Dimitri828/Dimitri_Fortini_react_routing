@@ -6,7 +6,7 @@ export default function Detail(){
 
     return(
         <>
-        <h1>DETAIL</h1>
+        <h1 className="mt-100">DETAIL</h1>
 
         <h3>{post.title}</h3>
         <p>{post.body}</p>

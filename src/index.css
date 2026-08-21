@@ -3,8 +3,19 @@ body {
 }
 .navbar {
   height: 100px;
-
+  width: 100%;
+  position: fixed;
+  top: 0px;
   background-color: cornflowerblue;
+}
+.dark{
+  background-color: aqua;
+}
+.light{
+  background-color: aquamarine;
+}
+.mt-100{
+  margin-top: 100px;
 }
 .d-flex {
   height: 100%;

@@ -5,7 +5,7 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import router from "./routing/router";
 import { RouterProvider } from "react-router-dom";
-import { UserContext } from "./context/Context";
+import { UserContext } from "./context/UserContext";
 
 function App() {
   const [count, setCount] = useState(0);

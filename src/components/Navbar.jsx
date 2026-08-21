@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
-import { Context } from "../context/Context";
+import { UserContext } from "../context/UserContext";
 import { useContext, useState } from "react";
+import { Context } from "../context/UserContext";
+import useScroll from"../hooks/useScroll";
 
 export default function Navbar() {
     const { user,logout } = useContext(Context);
-    
+    const[scrolled,scrollY]=useScroll();
     return (
-    <nav className="navbar">
-      <ul className="d-flex ul">
+    <nav ref={scrolled} className={`navbar ${scrollY>0 ? 'dark':'light'}`} >
+      <ul className="d-flex ul ">
         <li>
           <Link className="nav-link" to={"/"}>
             Homepage
@@ -28,7 +30,7 @@ export default function Navbar() {
                 </li>
           </>
         ))||
-        (!user && (
+        (
           <>
             <li>
               <Link className="nav-link" to={"/register"}>
@@ -41,7 +43,7 @@ export default function Navbar() {
               </Link>
             </li>
           </>
-        ))}
+        )}
       </ul>
     </nav>
   );

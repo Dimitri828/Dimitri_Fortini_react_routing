@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Context, UserContext } from "../context/Context";
+import { Context, UserContext } from "../context/UserContext";
 export default function Register() {
   const { register } = useContext(Context);
   const [userName, setUserName] = useState();
@@ -19,7 +19,7 @@ export default function Register() {
   }
   return (
     <>
-      <h1>Register</h1>
+      <h1 className="mt-100">Register</h1>
       <form action="" className="form" onSubmit={handleSubmit}>
         <label htmlFor="userName">Name</label>
         <input type="text" id="userName" onChange={handleChange} />
