@@ -19,21 +19,21 @@ export default function Register() {
   }
   return (
     <>
-      <h1 className="mt-100">Register</h1>
-      <form action="" className="form" onSubmit={handleSubmit}>
+      <h1 className="mt-[100px] text-9xl mb-[50px]">Register</h1>
+      <form action="" className="flex justify-center items-center flex-col gap-y-[10px]" onSubmit={handleSubmit}>
         <label htmlFor="userName">Name</label>
-        <input type="text" id="userName" onChange={handleChange} />
+        <input className="input mb-[10px]" type="text" id="userName" onChange={handleChange} />
 
         <label htmlFor="userEmail">Email</label>
-        <input type="email" id="userEmail" onChange={handleChange} />
+        <input className="input mb-[10px]" type="email" id="userEmail" onChange={handleChange} />
 
         <label htmlFor="userPassword">Password</label>
-        <input type="password" id="userPassword" />
+        <input className="input mb-[10px]" type="password" id="userPassword" />
 
         <label htmlFor="confirmPassword">Confirm Password</label>
-        <input type="password" id="confirmPassword" />
+        <input className="input mb-[50px]" type="password" id="confirmPassword" />
 
-        <button type="submit">Click here</button>
+        <button type="submit" className="btn  btn-xl btn-success">Click here</button>
       </form>
     </>
   );

@@ -1,48 +1,24 @@
-body {
-  margin: 0px;
-}
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
 .navbar {
   height: 100px;
   width: 100%;
   position: fixed;
   top: 0px;
-  background-color: cornflowerblue;
 }
 .dark{
-  background-color: aqua;
+  background-color: rgb(72, 127, 228);
 }
 .light{
-  background-color: aquamarine;
-}
-.mt-100{
-  margin-top: 100px;
-}
-.d-flex {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(100, 149, 237);
+  
 }
 
-.ul {
-  gap: 30px;
-  list-style: none;
-  padding-left: 0px;
-  margin-top: 0px;
-}
-.navbar .nav-link {
-  text-decoration: none;
-  color: rgb(51, 51, 51);
-  font-size: 30px;
-}
 
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.form > input {
-  margin-bottom: 20px;
-}
+
+
+
+

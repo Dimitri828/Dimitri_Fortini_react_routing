@@ -6,10 +6,12 @@ export default function Detail(){
 
     return(
         <>
-        <h1 className="mt-100">DETAIL</h1>
+        <h1 className="mt-[100px] text-9xl">DETAIL</h1>
+        <div className="flex justify-center flex-col items-center h-screen ">
+        <h3 className="text-xl">TITLE: <span className="text-3xl font-bold">{post.title}</span></h3>
+        <p className="text-xl w-[50vw] mt-[20px]">TEXT: <span className="text-2xl font-semibold text-justify ">{post.body} </span></p>
 
-        <h3>{post.title}</h3>
-        <p>{post.body}</p>
+        </div>
         </>
     )
 }
